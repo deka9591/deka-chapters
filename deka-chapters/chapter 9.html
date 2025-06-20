@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <title>ch.9</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="ch.9.css">
+</head>
+
+<header class="bg-white shadow p-4 flex justify-between items-center flex-wrap">
+  <img src="/DK logo design_ Initial DK letter logo design monogram vector design pro vector_ copy.jpg" alt="DK Logo" class="rounded-lg shadow w-11" />
+
+  <nav class="flex items-center space-x-5 text-sm md:text-base relative">
+    <a href="#" class="text-teal-800 font-semibold">Home</a>
+    <a href="/About-me.htm" class="hover:underline">About Me</a>
+    <a href="/about-JUS.html" class="hover:underline">About Jamacad</a>
+    <a href="/About-xfdey.html" class="hover:underline">About Xfadeyda</a>
+    <a href="/About-Content.htm" class="hover:underline">Content</a>
+  
+
+  <!-- Others Dropdown -->
+  <div class="relative">
+    <button id="dropdownButton" class="hover:underline focus:outline-none text-sm md:text-base">Others▾</button>
+    <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-white shadow-lg rounded-md mt-1 w-36 py-1 z-50 text-sm">
+      <li><a href="chapter 6.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 6</a></li>
+      <li><a href="ch.7.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 7</a></li>
+      <li><a href="chapter 8.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 8</a></li>
+      <li><a href="chapter 9.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 9</a></li>
+      <li><a href="chapter 10.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 10</a></li>
+    </ul>
+
+  </div>
+
+</header>
+</nav>
+
+<!-- JavaScript for toggle -->
+<script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Main Content  -->
+   <!-- <div style="border: 2px solid black; background-color: lightblue; padding: 3px;"> -->
+  <!-- Box-kan waxaa ku jira border iyo midabka gudaha
+</div> -->
+
+<!-- 
+  <style>
+    body {
+      background-color: #d9cbb7;
+      font-family: Georgia, serif;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: #f1e1c2;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #888;
+      padding: 30px;
+      width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 90%;
+    } -->
+<!-- 
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #e7d7be;
+    }
+  </style>
+</head>
+<body> -->
+
+  <!-- <div class="container">
+    <h1>Practice 9.1</h1>
+    <h2>School History</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>School Attended</th>
+          <th>Years</th>
+          <th>Degree Awarded</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Schaumburg High School</td>
+          <td>2012—2016</td>
+          <td>High School Diploma</td>
+        </tr>
+        <tr>
+          <td>Harper College</td>
+          <td>2016—2017</td>
+          <td>Web Developer Certificate</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <style>
+    /* body {
+      background-color: #d9cbb7;
+      font-family: Georgia, serif;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: #f1e1c2;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #888;
+      padding: 30px;
+      width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 90%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #e7d7be;
+    }
+  </style>
+</head>
+<body>
+ */ -->
+
+
+
+    <!-- <div class="container">
+        <h1>Practice 9.2</h1>
+        <h2>School History</h2>
+    
+        <table>
+        <thead>
+            <tr>
+            <th>School Attended</th>
+            <th>Years</th>
+            <th>Degree Awarded</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Schaumburg High School</td>
+            <td>2012—2016</td>
+            <td>High School Diploma</td>
+            </tr>
+            <tr>
+            <td>Harper College</td>
+            <td>2016—2017</td>
+            <td>Web Developer Certificate</td>
+            </tr>
+        </tbody>
+        </table>  -->
+
+
+
+          <div class="section-box">
+    
+    <h1 style="text-decoration: underline; color: black; text-align: center; font-weight: bold;">practice 9.1</h1>
+        <div class="responsive-table" id="maida2">
+    <div class="responsive-table font-bold" >
+      <table border="1" style="text-decoration: underline;text-align: center;color: #000; font-weight: bold; ">
+        <caption style="font-weight: bold;">School History</caption>
+        <tr style="font-weight: bold;">
+          <th>School Attended</th>
+          <th>Years</th>
+          <th>Degree Awarded</th>
+        </tr>
+        <tr>
+          <td>Schaumburg High School</td>
+          <td>2012&mdash;2016</td>
+          <td>High School Diploma</td>
+        </tr>
+        <tr>
+          <td>Harper College</td>
+          <td>2016&mdash;2017</td>
+          <td>Web Developer Certificate</td>
+        </tr>
+      </table> 
+    </div>
+  </div>
+  </div>
+
+    <div class="section-box">
+       <h1 style="text-decoration: underline; color: black; text-align: center; font-weight: bold;">practice 9.2</h1>
+        <div class="responsive-table" id="maida2">
+    <div class="responsive-table"> 
+
+    <table border="1">
+     <tr>
+        <td rowspan="3">Cana Island Lighthouse</td>
+		<td>Built: 1869</td>
+    </tr>
+    <tr>
+        <td>Automated: 1944</td>
+    </tr>
+	<tr>
+        <td>Tower Height: 65 feet</td>
+    </tr>
+</table>
+</div>
+</div>
+</div>
+
+  <div class="section-box">
+    <h1 style="text-decoration: underline; color: black; text-align: center;font-weight: bold;">practice 9.3</h1>
+    <div class="responsive-table" id="maida1">
+      <table border="1">
+        <caption>Lighthouse Island Bistro Specialty Coffee Menu</caption>
+        <tr>
+          <th>Specialty Coffee</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+        <tr class="altrow">
+          <td>Lite Latte</td>
+          <td>Indulge in a shot of espresso with steamed, skim milk.</td>
+          <td>$3.50</td>
+        </tr>
+        <tr>
+          <td>Mocha Latte</td>
+          <td>Choose dark or milk chocolate with steamed milk.</td>
+          <td>$4.00</td>
+        </tr>
+        <tr class="altrow">
+          <td>MCP Latte</td>
+          <td>A luscious mocha latte with caramel and pecan syrup.</td>
+          <td>$4.50</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-box">
+    
+    <h1 style="text-decoration: underline; color: black; text-align: center;">practice9.4</h1>
+    <div class="responsive-table" id="maida1">
+     <table border="1" id="w1"> 
+ <caption>Lighthouse Island Bistro Specialty Coffee Menu</caption>
+   <tr>
+     <th>Specialty Coffee</th>
+	 <th>Description</th>
+     <th>Price</th>
+  </tr>
+  <tr>
+     <td>Lite Latte</td>
+     <td>Indulge in a shot of espresso with steamed, skim milk. </td>
+	 <td>$3.50</td>
+  </tr>
+  <tr>
+     <td>Mocha Latte</td>
+     <td>Choose dark or milk chocolate with steamed milk.</td>
+	 <td>$4.00</td>
+   </tr>
+    <tr>
+     <td>MCP Latte</td>
+     <td>A luscious mocha latte with caramel and pecan syrup. </td>
+	 <td>$4.50</td>
+  </tr>
+</table>
+</div>
+
+  </div>
+    
+</body>
+</html>
